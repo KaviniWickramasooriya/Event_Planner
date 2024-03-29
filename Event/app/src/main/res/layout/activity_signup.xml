@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="false"
+    android:forceHasOverlappingRendering="false"
+    android:foregroundTintMode="screen"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/signup_sc_name"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="286dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="10sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/signup_sc_fname"
+            android:inputType="text"
+            android:textColorHint="#546E7A"
+            android:visibility="visible"
+            tools:ignore="VisualLintBounds" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="290dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/signup_sc_lname"
+            android:inputType="textPassword"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="290dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/signup_sc_mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="290dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/signup_sc_mobile"
+            android:inputType="phone"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="290dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="10sp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/signup_sc_pw"
+            android:inputType="textPassword"
+            android:textColorHint="#546E7A" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/signup_sc_checkbox"
+            android:textSize="18sp"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/signup_sc_signupbtn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/signup_sc_already"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/signup_sc_loginname"
+        android:textColor="@color/secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
